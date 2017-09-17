@@ -9,8 +9,10 @@ include($maindir.'config.php');
 <body>
 
 <?php include($maindir.'inc/menubar.php'); ?>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+<center>
+<h1>Onderhoudsmodus is ingeschakeld.</h1>
+<h3>Kom binnenkort terug.</h3>
+</center>
 <?php include($maindir.'inc/footer.php'); ?>
 </body>
 </html>
