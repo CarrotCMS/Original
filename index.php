@@ -1,5 +1,5 @@
 <?php
-$maindir = './'; // Dit is belangrijk.
+$maindir = './';
 include($maindir.'config.php');
 ?>
 <!DOCTYPE html>
