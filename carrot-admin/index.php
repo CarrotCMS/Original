@@ -112,8 +112,8 @@ include($maindir.'config.php');
 				<div class="loginmodal-container">
 					<h1>Log in</h1><br>
 				  <form method="post">
-					<input type="text" name="user" placeholder="&#xf007;&nbsp;Gebruikersnaam">
-					<input type="password" name="pass" placeholder="&#xf084;&nbsp;Wachtwoord">
+					<input type="text" name="user" placeholder="Gebruikersnaam">
+					<input type="password" name="pass" placeholder="Wachtwoord">
 					<button type="submit" name="login" class="login loginmodal-submit" style="width: 100%;"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Log In</button>
 				  </form>
 
