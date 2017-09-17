@@ -115,8 +115,7 @@ include($maindir.'config.php');
 					<input type="text" name="user" placeholder="Gebruikersnaam">
 					<input type="password" name="pass" placeholder="Wachtwoord">
 					<button type="submit" name="login" class="login loginmodal-submit" style="width: 100%;"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Log In</button>
-				  </form>
-
+        </form>
 				  <div class="login-help">
 					<a href="https://github.com/CarrotCMS/Original/wiki/Ik-ben-mijn-wachtwoord-vergeten">Hulp Nodig?</a><br>Standaardgegevens:<br><i class="fa fa-users" aria-hidden="true"></i>&nbsp;admin<br><i class="fa fa-key" aria-hidden="true"></i>&nbsp;default
 				  </div>
