@@ -111,14 +111,14 @@ include($maindir.'config.php');
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Log in</h1><br>
-				  <form>
-					<input type="text" name="user" placeholder="Gebruikersnaam">
-					<input type="password" name="pass" placeholder="Wachtwoord">
-					<input type="submit" name="login" class="login loginmodal-submit" value="Log in">
+				  <form method="post">
+					<input type="text" name="user" placeholder="&#xf007;&nbsp;Gebruikersnaam">
+					<input type="password" name="pass" placeholder="&#xf084;&nbsp;Wachtwoord">
+					<button type="submit" name="login" class="login loginmodal-submit" style="width: 100%;"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Log In</button>
 				  </form>
 
 				  <div class="login-help">
-					<a href="https://github.com/CarrotCMS/Original/wiki/Ik-ben-mijn-wachtwoord-vergeten">Hulp Nodig?</a>
+					<a href="https://github.com/CarrotCMS/Original/wiki/Ik-ben-mijn-wachtwoord-vergeten">Hulp Nodig?</a><br>Standaardgegevens:<br><i class="fa fa-users" aria-hidden="true"></i>&nbsp;admin<br><i class="fa fa-key" aria-hidden="true"></i>&nbsp;default
 				  </div>
 				</div>
 			</div>
