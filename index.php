@@ -11,6 +11,6 @@ include($maindir.'config.php');
 <?php include($maindir.'inc/menubar.php'); ?>
 <h1>This is a heading</h1>
 <p>This is a paragraph.</p>
-
+<?php include($maindir.'inc/footer.php'); ?>
 </body>
 </html>
