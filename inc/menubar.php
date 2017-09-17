@@ -13,7 +13,7 @@
   <span class="caret"></span></a>
   <ul class="dropdown-menu">
     <li><a href="<?php echo $maindir.'switchstyle.php?s=default';?>">Standaard</a></li>
-    <li><a href="#">Page 1-2</a></li>
+    <li><a href="<?php echo $maindir.'switchstyle.php?s=darkly';?>">Darkly</a></li>
     <li><a href="#">Page 1-3</a></li>
   </ul>
 </li>
