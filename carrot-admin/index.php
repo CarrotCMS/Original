@@ -1,6 +1,21 @@
 <?php
 $maindir = '../';
 include($maindir.'config.php');
+if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == 'true'){
+  header('Location: ./admin.php');
+}
+if(isset($_POST['user']) && isset($_POST['pass'])){
+  $user = strtolower($_POST['user']);
+  $pass = sha1($_POST['pass']);
+  $result = mysqli_query($db, "SELECT * FROM users WHERE username LIKE '".$user."' AND password LIKE '".$pass."' LIMIT 1");
+  if(mysqli_num_rows($result) < 1){
+    $msg = 'Dit wachtwoord is fout.';
+  }else{
+    $_SESSION['logged_in'] = 'true';
+    $_SESSION['username'] = mysqli_fetch_array($result)['username'];
+    header('Location: ./admin.php');
+  }
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -106,7 +121,13 @@ include($maindir.'config.php');
 </style>
 <body>
 
-<?php include($maindir.'inc/menubar.php'); ?>
+<?php include($maindir.'inc/menubar.php');
+if(isset($msg)){
+  echo '<div class="alert alert-danger" style="margin-left: 30%; margin-right: 30%;">
+<center> <strong>'.$msg.'</strong> </center>
+</div>';
+}
+?>
 <div>
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
@@ -123,5 +144,6 @@ include($maindir.'config.php');
 			</div>
 </div>
 <?php include($maindir.'inc/footer.php'); ?>
+
 </body>
 </html>

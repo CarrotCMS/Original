@@ -8,4 +8,4 @@ if(!isset($_COOKIE['style'])){
 ?>.min.css">
 <script src='<?php echo $maindir;?>js/jquery-3.2.1.min.js'></script>
 <script src='<?php echo $maindir;?>js/bootstrap.min.js'></script>
-<link rel="stylesheet" type="text/css" href="<?php echo $maindir;?>css/font-awesome.min.css"> 
+<link rel="stylesheet" type="text/css" href="<?php echo $maindir;?>css/font-awesome.min.css">

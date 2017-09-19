@@ -10,4 +10,6 @@ define('sitetitle', 'Carrot CMS'); // Voer hier de naam van je site in!
 
 // NIET AANPASSEN!
 
+session_start();
+
 $db = mysqli_connect(dbhost, dbuser, dbpass, database) or die('<!DocType HTML><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body style="font-size: 50px; padding: 10px; padding-top: 20%;"><p>Ik kan niet inloggen op de database <strong>'.database.'</strong>. Bestaat deze wel en zijn de logingegevens wel goed?</p></body></html>');
