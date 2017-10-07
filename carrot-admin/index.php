@@ -20,7 +20,8 @@ if(isset($_POST['user']) && isset($_POST['pass'])){
 <!DOCTYPE html>
 <html>
 <title>Back End | <?php echo sitetitle; ?></title>
-<?php include($maindir.'inc/heads.php'); ?>
+<?php include($maindir.'inc/heads.php');
+ ?>
 <style>
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 

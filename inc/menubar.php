@@ -8,15 +8,7 @@
       <li><a href="#">Page 1</a></li>
       <li><a href="#">Page 2</a></li>
       <li><a href="#">Page 3</a></li>
-      <li class="dropdown">
-  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stijl
-  <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="<?php echo $maindir.'switchstyle.php?s=default';?>">Standaard</a></li>
-    <li><a href="<?php echo $maindir.'switchstyle.php?s=darkly';?>">Darkly</a></li>
-    <li><a href="<?php echo $maindir.'switchstyle.php?s=yeti';?>">Yeti</a></li>
-  </ul>
-</li>
     </ul>
+    <?php include($maindir.'inc/styles.php'); ?>
   </div>
 </nav>

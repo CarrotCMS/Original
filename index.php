@@ -1,6 +1,7 @@
 <?php
 $maindir = './';
 include($maindir.'config.php');
+include($maindir.'inc/viewscounter.php')
 ?>
 <!DOCTYPE html>
 <html>

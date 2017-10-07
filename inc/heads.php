@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="<?php echo $maindir; ?>css/default.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $maindir; ?>css/<?php
 if(!isset($_COOKIE['style'])){
   setcookie('style', 'default', time()+3600*24*7, '/');
